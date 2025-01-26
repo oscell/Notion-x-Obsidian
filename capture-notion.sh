@@ -9,7 +9,7 @@ export $(grep -v '^#' .env | xargs)
 # @raycast.mode compact
 
 # Optional parameters:
-# @raycast.icon 🤖
+# @raycast.icon 📥
 # @raycast.argument1 { "type": "text", "placeholder": "Placeholder" }
 # @raycast.packageName Notion
 
@@ -27,7 +27,7 @@ curl -X POST "https://api.notion.com/v1/pages" \
   -H "Notion-Version: 2021-05-13" \
   -d '{
     "parent": {
-      "database_id": "'"$NOTION_DATABASE_ID"'"
+      "database_id": "'"$NOTION_TASKS_DATABASE_ID"'"
     },
     "properties": {
       "Name": {
